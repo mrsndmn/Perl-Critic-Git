@@ -45,7 +45,7 @@
    "provides" : {
       "Perl::Critic::Git" : {
          "file" : "lib/Perl/Critic/Git.pm",
-         "version" : "v1.3.2"
+         "version" : "v1.3.3"
       }
    },
    "release_status" : "stable",
@@ -58,6 +58,6 @@
          "url" : "https://github.com/guillaumeaubert/Perl-Critic-Git"
       }
    },
-   "version" : "v1.3.2",
+   "version" : "v1.3.3",
    "x_serialization_backend" : "JSON::PP version 2.27300_01"
 }

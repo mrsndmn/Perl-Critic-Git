@@ -17,11 +17,11 @@ Perl::Critic::Git - Bond git and Perl::Critic to blame the right people for viol
 
 =head1 VERSION
 
-Version 1.3.2
+Version 1.3.3
 
 =cut
 
-our $VERSION = '1.3.2';
+our $VERSION = '1.3.3';
 
 
 =head1 SYNOPSIS
@@ -525,7 +525,7 @@ sub diff_violations
 	{
 		my $line_number = $violation->line_number();
 		my $column_number = $violation->column_number();
-		my $is_changed_line = ($line_number == 1 && $column_number == 1) || List::BinarySearch::binsearch {$a <=> $b} $line_number, @to_lines_numbers;
+		my $is_changed_line = ($line_number == 1 && $column_number == 1) || defined(List::BinarySearch::binsearch {$a <=> $b} $line_number, @to_lines_numbers);
 		if ($is_changed_line) {
 			push @diff_violations, $violation;
 		}
