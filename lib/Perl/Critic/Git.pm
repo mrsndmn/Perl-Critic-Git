@@ -525,7 +525,7 @@ sub diff_violations
 	{
 		my $line_number = $violation->line_number();
 		my $column_number = $violation->column_number();
-		my $is_changed_line = ($line_number == 1 && $column_number == 1) || List::BinarySearch::binsearch {$a <=> $b} $line_number, @to_lines_numbers;
+		my $is_changed_line = ($line_number == 1 && $column_number == 1) || defined(List::BinarySearch::binsearch {$a <=> $b} $line_number, @to_lines_numbers);
 		if ($is_changed_line) {
 			push @diff_violations, $violation;
 		}

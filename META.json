@@ -62,22 +62,24 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/cynovg/Perl-Critic-Git/issues"
+         "web" : "https://github.com/mrsndmn/Perl-Critic-Git/issues"
       },
-      "homepage" : "https://github.com/cynovg/Perl-Critic-Git",
+      "homepage" : "https://github.com/mrsndmn/Perl-Critic-Git",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/cynovg/Perl-Critic-Git.git",
-         "web" : "https://github.com/cynovg/Perl-Critic-Git"
+         "url" : "https://github.com/mrsndmn/Perl-Critic-Git.git",
+         "web" : "https://github.com/mrsndmn/Perl-Critic-Git"
       }
    },
    "version" : "1.3.3",
    "x_contributors" : [
+      "Dmitry Tarasov <15786586+mrsndmn@users.noreply.github.com>",
       "Dmitry Tarasov <d.tarasov@corp.mail.ru>",
       "Dmitry Tarasov <mrsndmn46@gmail.com>",
       "Guillaume Aubert <aubertg@cpan.org>",
       "Mohammad S Anwar <mohammad.anwar@yahoo.com>",
-      "Philippe Bruhat (BooK) <book@cpan.org>"
+      "Philippe Bruhat (BooK) <book@cpan.org>",
+      "k.novgorodtsev <k.novgorodtsev@vk.team>"
    ],
    "x_serialization_backend" : "JSON::PP version 4.06",
    "x_static_install" : 1
